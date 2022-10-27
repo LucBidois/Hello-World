@@ -1,0 +1,117 @@
+/* how to CSS (Cascading Style Sheets) */
+
+
+css works with a selector
+
+/*selector{element:value}*/
+
+
+/*list of selectors*/
+
+.class
+#id
+*
+element
+element, element
+
+
+
+
+p, h1 {
+  color:blue
+} /* an example applied on two elements
+
+/* selector */
+* {} /* this is the universal selector */
+
+/*list of css properties */
+color:
+font-family:
+/* list of css Values */
+blue; red; firebrick; Aquamarine; green; DarkSlateGray; /* colours */
+Arial
+
+
+
+                          /*The CSS Box Model*/
+/*margins,
+borders,
+paddings,
+content,
+*/
+/* the order of the properties work in is
+top>right>bottom>left
+background also covers the paddings
+*/
+/* dealing with borders*/
+
+/*boxes*/
+h1 { /*this creates a solid border */
+  padding:10px 0px 0px 0px; /*top, right, bottom, left*/
+  border:5px green; /* border is discribed with style, size, color */
+}
+
+p {
+  padding: 5px;
+  border-style: solid; /* dotted, dashed, double, groove, ridge, inset, outset, hidden */
+  border width: 2px; /* uses standard sizes */
+  border-color: blue; /*hexvalues(#FF6600),colour name(red), RGB values (rgb(0,153,0)) */
+}
+
+div { /*this creates a box of total height and width of 100px */
+  border: 5px solid green;
+  width: 90px; /*note that percentages can also be used */
+  height: 90px;
+}
+
+.minamax {
+  border: 2px solid green;
+  min-height: 100px; /* */
+  max-width: 100px; /* should be helpful making sure sidebars or posted comments do not overflow in the page */
+}
+
+.backgrounds {
+  background-color: red; /*remember that the latest css code lays over previous ones*/
+  background-image: url("image.png");
+  background-repeat: no-repeat; /* repeat-x (horizontal only), repeat-y, inherit(takes same repitition as parent element) */
+  background-attachment: fixed; /*fixed (holds image in place on screen), scroll (image scrolls with rest of content)*/
+}
+/*lists*/
+.liststyle {
+  list-style-type:lower-alpha; /*none(no points will show), lower-alpha(ol), circle(ul), square(ul) */
+  list-style-image: url("image.png"); /* enables use of images as the bulletpoints */
+  list-style-position: inside; /*inside, outside, inherit */
+  list-style: square outside none; /*format: type, image, position */
+}
+/*tables*/
+.tablestyle {
+  border-collapse:separate; /* separate, single-border */
+  border-spacing:20px 40px; /* width, height */
+  empty-cells: hide; /*hides borders of empty cells */
+  width: 100%;
+  border:1px solid gray;
+  table-layout: auto; /*auto, fixed */
+}
+
+.tablecaption {
+  caption-side: top; /*top, bottom */
+}
+
+/*links/changing the cursor*/    /*:link,:visited etc are pseudo selectors */
+a:hover { /*mouse hovering on the link*/
+  color: red;
+  cursor: crosshair; /*default, crosshair, pointer, progress, wait, etc */
+}
+a:link { /* unvisited*/
+  color: blue;
+  text-decoration:none; /*removes the underline on a link*/
+  border:none; /*removes borders of images*/
+}
+a:visited {
+  color: green;
+}
+a:active { /*link activates when it it clicked */
+  color: pink;
+}
+
+a:

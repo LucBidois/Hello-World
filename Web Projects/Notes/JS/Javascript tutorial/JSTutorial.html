@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="/css/master.css"> -->
+    <title>Javascript Tutorial</title>
+  </head>
+  <body>
+    <input id="modMe" type="text" value="starting">
+    <p id="modMe2">starting text</p>
+
+    <div class="">
+      <canvas id="mycanvas" width="200px" height="200px" style="border:1px solid #000"></canvas>
+      <script type="text/javascript">
+
+      const canvas = document.getElementById("mycanvas");
+      const context = canvas.getContext("2d");
+      const blobCount = 10;
+      const colors = new Array("green","red","orange","blue","pink","yellow")
+
+      let blobs = new Array()
+
+      class Blob {
+        constructor(colour, size) {
+          this.x = Math.random()*canvas.width;
+          this.y = Math.random()*canvas.height;
+          this.colour = colour;
+          this.size = size;
+          this.xChange = Math.random();
+          this.yChange = Math.random();
+        }
+        move(){
+          if (this.x >= canvas.width || this.x <= 0) {
+            this.xChange *= -1;
+          }
+          if (this.y >= canvas.height || this.y <= 0) {
+            this.yChange *= -1;
+          }
+          this.x += this.xChange;
+          this.y += this.yChange;
+        }
+        draw(){
+          context.beginPath();
+          context.arc(this.x,this.y,this.size,0,2*Math.PI);
+          context.fillStyle = this.colour;
+          context.fill();
+          context.stroke();
+        }
+      }
+
+      // const newBlob0 = new Blob("green", 25);
+      // const newBlob1 = new Blob("pink", 25);
+      // const newBlob2 = new Blob("blue", 25);
+      // const newBlob3 = new Blob("red", 25);
+      // newBlob.draw();
+
+      // blobs.push(newBlob0);
+      // blobs.push(newBlob1);
+      // blobs.push(newBlob2);
+      // blobs.push(newBlob3);
+
+      function randomChoice(arr){
+        return arr[Math.floor(Math.random()*arr.length)];
+      }
+
+      for (let i = 0; i < blobCount; i++){
+        let randomColor = randomChoice(colors);
+        blobs.push(new Blob(randomColor,25));
+      }
+
+      function canvasDraw(){
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        blobs.forEach(function(obj){
+          obj.draw();
+          obj.move();
+        })
+      }
+
+      setInterval(canvasDraw,10)
+
+      </script>
+    </div>
+  </body>
+  <!-- <script src="hello.js" type="text/javascript"></script> -->
+</html>

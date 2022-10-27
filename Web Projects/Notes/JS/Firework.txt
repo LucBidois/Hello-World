@@ -1,0 +1,4 @@
+1. get small blob to shoot upwards and disapear and random interval 
+	-lifespan
+	-direction 
+	-speed

@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!--document type declaration this tells the web browser that it is reading a html file-->
+<html> <!--Tells browser that Html code is what is to be interpreted-->
+<!--  <p>Hello there!</p>  p is in the opening tag, p being ofr a pharagraph </p> is the closing tag "hello there" shows what -->
+  <head> <!--This contains metadata about the webpage--><!--this is not displayed on the page itself-->
+    <link href="path to css file" type="text/css" rel="stylesheet"> <!--locating and activating css file -->
+    <style> /* used in html file to write css code */
+
+    </style>
+    <title>An Unexpected Journey</title> <!--this is the text that is shown on the tab/page name at the top-->
+  </head>
+  <body> <!--this contains stuff that will be displayed on the webpage-->
+
+
+  </body>
+</html>
+<!--This is the minuimum needed to create a working webpage-->
+
+<!--The next stuff will concentrate on what can be used in the HTML to make your website more interesting-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Words in Tab</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div class="container">
+  		<h1>An Unexpected Journey</h1><!--h1 to h6 give a range of text sizes--><!--h# is used in titles-->
+      <p> paragraph </p>
+      <p> this paragraph has a <br /> break in it <p> <!--this starts a new line, just using <p> does not do that for you-->
+      <a href="https://www.codecademy.com/learn">Learn More</a> <!--created a link going to codeacademy. only "learn more" is displayed"-->
+      <ul> <!-- creates a bullet pointed list-->
+        <li>Bullet</li> <!-- "li" is each element in the list -->
+        <li>Pointed</li>
+        <li>List</li>
+      </ul>
+      <ol> <!-- numbered list -->
+        <li>one</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol>
+      <a> </a> <!-- this is an anchor element. it is used to link to websites-->
+      <a href="https://www.facebook.com">click to go to facebook</a><!--In the anchor, href is used as the name of the link (for a clickable link it has to be the URL)-->
+      <a href="#" target="_blank"> <!--name is "#". By having target="_blank" this opens the link in a separate webpage-->
+    <img src="https://i.imgflip.com/1ieqzs.jpg" /><!--note img is a self-closing element--><!-- placing an image on the page, using an internet source --></a>
+    <img src="#" alt="description of image"/> <!--useful if the image has not loaded yet/for visually impared people using software that reads image descriptions-->
+<!-- an image attribute can become a link by weapping it in the anchor element-->
+    </div>
+    <form class="" action="index.html" method="post">
+      <input type="text" name="username">
+    </form>
+    <frameset cols="25%,50%">
+      <frame src="location">
+      <frame src="2nd location">
+    </frameset>
+  </body>
+</html>
+
+
+<!-- extra shit -->
+<!--A viewport meta tag should make the web site work on all devices and screen resolutions: -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- -->

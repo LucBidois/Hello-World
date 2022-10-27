@@ -1,0 +1,23 @@
+
+.title{
+  font-family: Futura;
+}
+
+.text {
+  font-family: "Times New Roman",Times,serif; /*Helvetica,Arial, sans-serif;*/
+  font-size:small; /* small, medium, large, xlarge or we can use #px or #em */
+  font-style:normal; /*italic, normal, oblique*/
+  font-weight: lighter; /*lighter, bold, bolder, or number from 100-900 can be used */
+  font-variant: normal; /*normal, small-caps, inherit */
+  color:rgb(255,0,0); /* or use hexidecimal or one of the colour presets */
+  text-align:center;/*left, right, center*/
+  vertical-align:middle; /*top, bottom, middle or baseline, sub, super or #px (this can be + or - #px) */
+  text-decoration: none; /*none, inherit, overline, underline, line-through, blink*/
+  text-indent:60px; /*#px*/
+  text-shadow: 5px 2px 4px blue; /* x-coord, y-coord, blur radius, color*/
+  text-transform: capitalize; /* capitalise, uppercase, lowercase*/
+  letter-spacing: normal; /*#px or normal # can be negative*/
+  word-spacing: 30px; /*normal or #px */
+  white-space: nowrap; /*puts whole text on one line*/
+  white-space: normal; /*pre, pre-line, pre-wrap*/
+}

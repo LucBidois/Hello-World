@@ -1,0 +1,25 @@
+body {
+
+}
+nav p{
+  display:inline-block;
+  padding:10px;
+}
+.windows{
+  display:none ;
+}
+#window1{
+  background-color:green;
+  color:red;
+}
+
+#window2{
+  background-color:yellow;
+  color:blue;
+}
+
+#window3{
+  background-color:red;
+  color:white;
+}
+  

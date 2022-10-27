@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="chessGame.css">
+  <title>Chess</title>
+ </head>
+  <body>
+
+    <div class="header">
+      <p>header</p>
+    </div> <!-- header -->
+
+    <div class="container">
+      
+      <div class="chessArea">
+        <p>chessArea</p>
+        <div class="gameInfo">
+          <p>gameinfo</p>
+        </div> <!-- gameInfo -->
+
+        <div class="interactiveArea">
+          <p>interactiveArea</p>
+          <canvas id="canvas" width="500" height="500"></canvas>
+
+        </div> <!-- interactiveArea -->
+
+      </div> <!-- chessArea -->
+
+
+      <div class="moveHistory">
+        <p>moveHistory</p>
+      </div> <!-- moveHistory -->
+
+    </div> <!-- container -->
+
+<!-- onmousemove="getMousePos()" -->
+
+    <script src="chess.js" charset="utf-8"></script>
+
+    <button onclick="newGame()" type="button" name="button">New game</button>
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+Adjustable snake speed
+
+higher is slower
+let speed = 1; //Insane
+let speed = 5;  // Master
+let speed = 10; //Adept
+let speed = 15; //Beginer
+let speed = 20; 
+
+
+Things I want to do
+1. create some levels
+2. getting an apple gives points based on control option (difficulty setting)
+3. menu (needs to be designed first then set) (to be done at home where I can draw it properly?)
+4. should I make game take up less of canvas so that scores can be displayed? - or display scores using other html elements.
+5. make the snake movement smooth for speed < 5
+
+ Control files
+1. number of players (player 2 can be AI in the future)
+2. scoreboard - save top 5 or top 10 scores in each game mode.
+3. gamemodes - standard - walled - levels
+4. standard => no walls - endless - unique scoreboard per difficulty choice? or apples worth different amounts depending on difficulty
+5. walled => same as standard but with walls around edge (could do a endless gamemode with map choice)
+6. levels => reach a number of points then exit opens to next level (reset length when next level starts)
